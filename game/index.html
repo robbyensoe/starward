@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Starward — hold the ward, break the shards, gather their cores. An original arena-survival game.">
+<title>Starward</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0819; }
+  body { display: grid; place-items: center; overflow: hidden; }
+  canvas {
+    width: min(100vw, 177.78vh);
+    height: min(56.25vw, 100vh);
+    display: block;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="status" class="visually-hidden" aria-live="polite"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
